@@ -30,23 +30,21 @@ function devolverString(str) {
 // "Return" la string provista: str
 // Tu código:
 
-str="hola";
+
 
 return str;
 
-}  devolverString();
+}
 
 function suma(x, y) {
 // "x" e "y" son números
 // Suma "x" e "y" juntos y devuelve el valor
 // Tu código:
     
-  x=1;
-  y=5;
-  var suma = x + y ;
-  return suma;
+ 
+  return x + y;
 
-  } suma();
+  }
 
 
 function resta(x, y) {
@@ -54,38 +52,32 @@ function resta(x, y) {
 // Resta "y" de "x" y devuelve el valor
 // Tu código:
   
-  x=16;
-  y=5;
+ 
 
-var resta = x- y ;
-return resta;
+return x- y;
 
-} resta(); 
+} 
 
 function multiplica(x, y) {
 
 // Multiplica "x" por "y" y devuelve el valor
 // Tu código:
   
-  x=12;
-  y=10;
+  
+return x*y ;
 
-var multiplica = x*y;
-return multiplica ;
-
-} multiplica();
+} 
 
 function divide(x, y) {
 
 // Divide "x" entre "y" y devuelve el valor
 // Tu código:
 
-  x=25;
-  y=5;
-var divide = x/y;
-return divide;
+  
 
-}  divide();
+return x/y;
+
+}  
     
 
 function sonIguales(x, y) {
@@ -93,8 +85,7 @@ function sonIguales(x, y) {
 // Devuelve "true" si "x" e "y" son iguales
 // De lo contrario, devuelve "false"
 // Tu código:
-  x=2;
-  y=2;
+
 if (x === y ){
 
 return "true"
@@ -102,7 +93,7 @@ return "true"
 }
 return "false"
 
-}  sonIguales();
+}  
 
 function tienenMismaLongitud(str1, str2) {
 
@@ -110,8 +101,7 @@ function tienenMismaLongitud(str1, str2) {
 // De lo contrario, devuelve "false"
 // Tu código:
   
-  str1="Hola";
-  str2="H";
+
 
 if(str1==str2){
   
@@ -119,7 +109,7 @@ return "true"
 }
 return "false"
 
-} tienenMismaLongitud(); 
+} 
 
 
 function menosQueNoventa(num) {
@@ -127,7 +117,7 @@ function menosQueNoventa(num) {
 // Devuelve "true" si el argumento de la función "num" es menor que noventa
 // De lo contrario, devuelve "false"
 // Tu código:
-  num=65;
+ 
   
 if (num < 90){
 
@@ -136,7 +126,7 @@ return "true"
 }
 return "false"
   
-} menosQueNoventa();
+} 
 
 function mayorQueCincuenta(num) {
 
@@ -145,7 +135,7 @@ function mayorQueCincuenta(num) {
 // Tu código:
 
 
-num=85
+
 
   if (num>50){
   
@@ -154,7 +144,7 @@ num=85
   }
   return "false"
   
-  }  mayorQueCincuenta();
+  }  
   
 
 
@@ -163,11 +153,11 @@ function obtenerResto(x,y) {
  // Obten el resto de la división de "x" entre "y"
 // Tu código:
    
-    x= 10;
-    y= 2;
+    
+    
   return(x % y);
   
- }  obtenerResto();
+ }  
 
 function esPar(num) {
 
@@ -175,16 +165,16 @@ function esPar(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
 
-  num=8
+  
   
 if ( num % 2 == 0){
 
     return "true"
-}
+}else{
 
 return "false"
 
-} esPar() ;
+} }
 
 
 function esImpar(num) {
@@ -193,7 +183,7 @@ function esImpar(num) {
 // De lo contrario, devuelve "false"
 // Tu código:
 
-   num=3
+   //num=3
 
   if (num % 2 == 0){
   
@@ -202,7 +192,7 @@ function esImpar(num) {
   }
   return "true"
   
-  }  esImpar();
+  }  
 
   function elevarAlCuadrado(num) {
 
@@ -210,12 +200,9 @@ function esImpar(num) {
     // ojo: No es raiz cuadrada!
     // Tu código:
     
-    num=5
-    
-    let elevarAlCuadrado1= num ** 2;
-    return elevarAlCuadrado1
-
-    } elevarAlCuadrado();
+  
+    return Math.pow(num, 2);
+  }
     
 
 
@@ -225,40 +212,31 @@ function elevarAlCubo(num) {
 // Tu código:
   
 
-num=5
-    
-let elevarAlCubo1= num ** 3;
-return elevarAlCubo1
+return num * num * num;
 
-} elevarAlCubo();
+}
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  
-  num=2;
-  exponent=6
-  let elevar = num ** exponent;
-    return elevar
-  
-  }  elevar();
+  return Math.pow(num, exponent);
+}
 
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
   
- num=6.99
-var redondea = Math.round(num);
+ 
 
-return redondea
+return Math.round(num);
 
-} redondearNumero();
+}
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
   
-  num=5.33
+  //num=5.33
 
   var redondeaArriba = Math.ceil(num);
   
@@ -284,7 +262,7 @@ function esPositivo(numero) {
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
   
-  numero=-45;
+  //numero=-45;
   
   if (numero === 0 ){
    return false
@@ -304,8 +282,8 @@ function agregarSimboloExclamacion(str) {
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
 
-  let one="str";
-  let two="!";
+  //let one="str";
+  //let two="!";
   let simbolo= one + two;
   return simbolo
 
